@@ -1,0 +1,68 @@
+nav {
+	background-color: #003153;
+}
+
+a.navbar-brand {
+	width: 25%;
+	padding: 0;
+}
+
+body {
+	background-color: #e8e19d;
+	height: 100vh;
+	display: flexbox;
+	align-items: center;
+	justify-content: center;
+}
+
+/* BUTTONS */
+
+.btn-custom {
+	background-color: #003153;
+	color: white;
+	width: 90%;
+	text-align: center;
+	padding: 1.5rem;
+	border: none;
+	margin: 1rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	border-radius: 1000px;
+	box-shadow: 0 0 60px rgba(6, 12, 50, 0.46);
+}
+
+.btn-custom:hover,
+.btn-custom:focus {
+	color: #e8e19d;
+	transform: translateY(-1px);
+	width: 94%;
+}
+
+.btn-custom:hover::before,
+.btn-custom:focus::before {
+	opacity: 1;
+}
+
+.btn-custom:hover::after,
+.btn-custom:focus::after {
+	animation: none;
+	display: none;
+}
+
+.btn-custom::after {
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	border: 6px solid #003153;
+	position: absolute;
+	z-index: -1;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.btn-facts h6 {
+	padding-left: 2rem;
+	font-weight: 700;
+}
+/* MEDIA QUERIES */
