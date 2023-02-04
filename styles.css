@@ -8,7 +8,6 @@ a.navbar-brand {
 }
 
 body {
-	background-color: #e8e19d;
 	height: 100vh;
 	display: flexbox;
 	align-items: center;
@@ -28,14 +27,15 @@ body {
 	text-transform: uppercase;
 	font-weight: 700;
 	border-radius: 1000px;
-	box-shadow: 0 0 60px rgba(6, 12, 50, 0.46);
+	box-shadow: 0 0 15px rgba(6, 12, 50, 0.46);
 }
 
 .btn-custom:hover,
 .btn-custom:focus {
 	color: #e8e19d;
 	transform: translateY(-1px);
-	width: 94%;
+	width: 95%;
+	box-shadow: 0 0 60px rgba(232, 225, 157, 1);
 }
 
 .btn-custom:hover::before,
@@ -54,15 +54,24 @@ body {
 	height: 30px;
 	border-radius: 100%;
 	border: 6px solid #003153;
-	position: absolute;
+
 	z-index: -1;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
 
+.btn-facts {
+	text-align: left;
+}
+
 .btn-facts h6 {
 	padding-left: 2rem;
 	font-weight: 700;
+	text-align: left;
+}
+
+main {
+	width: 95%;
 }
 /* MEDIA QUERIES */
